@@ -1,0 +1,490 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* src/styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+nav span {
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+button {
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.select-wrapper {
+  width: 200px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.error {
+  color: #ff0000;
+  margin-top: 5px;
+}
+/* Add these styles to your existing App.css or create a new one */
+
+.admin-panel {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0; /* Sidebar background color */
+  padding: 20px;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the buttons vertically */
+}
+
+.main-content {
+  flex: 1; /* Take remaining space */
+  padding: 20px;
+}
+
+/* Style the sidebar buttons */
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #007bff; /* Same color as in AddRemoveDepartments.js */
+  color: white; /* Text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3; /* Hover state color */
+}
+
+.excel-sheet-container table {
+  min-width: 800px; /* Set minimum width for horizontal scrolling */
+}
+
+.data-rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* Adjust minmax value based on the width of your columns */
+}
+
+
+.data-row > div {
+  text-align: center;
+}
+.container-approve-reject {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.header-row-approve-reject {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns based on your data */
+  gap: 8px;
+  padding: 8px;
+  padding-left: 50px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.data-row-approve-reject {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns based on your data */
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.action-buttons-approve-reject {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.data-row-approve-reject > div {
+  text-align: center;
+}
+
+.header-row, .data-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  border-bottom: 1px solid #ccc; /* Add border at the bottom of each row */
+}
+
+.header-row {
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ccc; /* Add border at the top of the header row */
+}
+
+.data-row {
+  padding-top: 4px;
+  display: flex;
+}
+
+.date-cell {
+  width: 120px; /* Adjust the width as needed */
+  white-space: nowrap; /* Prevent line breaks */
+  border-right: 1px solid #ccc; /* Add border to the right of each cell */
+  padding: 8px; /* Optional: Add padding for spacing within cells */
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly; /* Adjust as needed */
+}
+
+.data-row > div {
+  text-align: center;
+}
+
+/* Update the CSS in your App.css or equivalent file */
+
+.existing-departments li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.existing-departments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.existing-departments li > div {
+  display: flex;
+  align-items: center;
+}
+
+.existing-departments li span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.existing-departments li button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.existing-departments li button:hover {
+  background-color: #d93636;
+}
+
+.units-container {
+  width: calc(100% - 10px); /* Adjusted width to consider spacing */
+  margin-bottom: 15px;
+}
+
+.units-container button {
+  width: 100%;
+}
+
+.units-container button:hover {
+  background-color: #d93636;
+  margin-top: 5px; /* Add margin between department and unit buttons */
+}
+
+.existing-departments div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.existing-departments span {
+  font-weight: bold; /* Make department names bold */
+}
+
+.existing-departments .unit-info {
+  display: flex;
+  align-items: center;
+}
+
+.existing-departments .unit-info span {
+  margin-right: 5px;
+}
+
+/* Updated styles in App.css */
+.existing-departments {
+  margin-top: 20px;
+}
+
+.existing-departments h3 {
+  margin-bottom: 10px;
+}
+
+.existing-departments table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.existing-departments th, .existing-departments td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.existing-departments th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.existing-departments button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.existing-departments button:hover {
+  background-color: #d93636;
+}
+
+/* Additional styles for centering and cell merging */
+.existing-departments .centered-cell {
+  text-align: center;
+}
+
+.existing-departments .merged-cell {
+  vertical-align: middle;
+}
+
+.date-cell,
+.header-row {
+  border: 1px solid #000;
+}
+
+.bold-header {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.excel-sheet td {
+  border: 1px solid #000; /* Add border to all cells */
+}
+
+.excel-sheet td:first-child {
+  border-left: 1px solid #000; /* Add left border to cells in the first column */
+}
+
+/* Add border to the first row */
+.excel-sheet tr:first-child td {
+  border-top: 1px solid #000; /* Add border to the top row */
+}
+
+.download-button {
+  margin-top: 10px; /* Add margin to separate the button from the table */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add space between dropdown items */
+}
+
+.dropdown-item label {
+  margin-right: 10px;
+  width: 100px; /* Fixed width for the label */
+}
+
+.dropdown-item select {
+  width: 200px; /* Fixed width for the select dropdown */
+}
+
+/* Update the existing styles in your App.css file */
+
+/* Add these styles to your existing App.css or create a new one */
+
+.excel-sheet-container {
+  overflow: auto; /* Enable both horizontal and vertical scrolling */
+  max-height: calc(100vh - 200px); /* Set max height for vertical scrolling */
+  border: 1px solid #ccc; /* Add border to the container */
+  border-radius: 5px; /* Optional: Add border radius for a rounded look */
+  padding: 10px; /* Optional: Add padding for spacing */
+}
+
+.excel-sheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  padding: 8px;
+  border-collapse: collapse; /* Add this to collapse borders and prevent spacing */
+}
+
+/* Make the first row (dates) scrollable only horizontally */
+.date-row {
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Make the first column (parameters/headings) scrollable only vertically */
+.parameter-column {
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Style for the first cell in the parameter column */
+.parameter-cell {
+  position: sticky; /* Make the cell sticky */
+  top: 0; /* Stick to the top */
+  z-index: 2; /* Set z-index to keep it above other cells */
+  background-color: #f2f2f2; /* Background color for the sticky cell */
+}
+
+/* Additional styling for the rest of the cells in the parameter column */
+.parameter-column .date-cell {
+  background-color: #f2f2f2; /* Background color for the cells in the parameter column */
+}
+
+/* Add this media query to apply scrolling only for smaller screens */
+@media (max-width: 800px) {
+  .excel-sheet-container {
+    overflow: auto; /* Enable both horizontal and vertical scrolling */
+    max-height: none; /* Remove max height for scrolling on smaller screens */
+  }
+}
+
+.update-button {
+  margin-right: 20px; /* Add margin to the right of the "Update" button */
+}
